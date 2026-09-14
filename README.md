@@ -28,7 +28,7 @@ Fotografias oficiais (miniaturas públicas de 360 × 640, disponíveis em 13/09/
 
 Os arquivos foram armazenados localmente para evitar expiração dos links do Instagram. Substitua por originais em alta resolução para melhorar a nitidez em telas grandes. Nenhuma imagem foi gerada por IA ou copiada das academias de referência.
 
-Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), em WebP de 1440 × 960 sem recompressão. Usada na abertura e em uma imagem completa na seção Comunidade; a versão móvel da abertura preserva o grupo inteiro. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento.
+Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), em WebP de 1440 × 960 sem recompressão. Usada como fundo da abertura tanto no desktop quanto no celular, com recorte responsivo e camada escura para leitura. A seção Comunidade preserva o enquadramento completo. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento.
 
 A foto da seção Academia foi substituída por um quadro estático do arquivo `1.mov` fornecido pelo usuário. Imagem `public/images/academy-live-photo.webp`, 1308 × 1744, extraída aproximadamente em 1,35 s de um Live Photo de 1,78 s, com orientação corrigida e conversão de cor P3 para sRGB. Somente a imagem estática é incluída no site; o MOV original permanece fora do projeto.
 

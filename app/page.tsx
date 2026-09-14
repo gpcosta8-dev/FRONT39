@@ -14,7 +14,7 @@ export default function Home() {
         <div className="hero-content shell">
           <p className="eyebrow light">CACHOEIRINHA, RS <span> / </span> BRAZILIAN JIU-JITSU</p>
           <h1 id="hero-title">MUDE<br /><span>SUA VIDA.</span></h1>
-          <p className="hero-description">Os dias passam. A vontade de mudar fica.<br />Dê a ela um lugar para começar.</p>
+          <p className="hero-description">Os dias passam. A vontade de mudar fica.<br />{' '}Dê a ela um lugar para começar.</p>
           <a className="cta cta-white" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Agende sua aula experimental <ArrowUpRight size={19} aria-hidden="true" /></a>
         </div>
         <div className="hero-foot shell"><a href="#front39">CONHEÇA A FRONT39 <ArrowDown size={16} aria-hidden="true" /></a><span>TODO RECOMEÇO PRECISA DE UM PRIMEIRO PASSO.</span></div>
