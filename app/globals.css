@@ -201,3 +201,29 @@ address { font-style:normal; }
 @media(max-width:480px) { .hero { min-height:max(620px,calc(100svh - 80px)); padding-block:60px 100px; } .hero h1 { font-size:clamp(3.1rem,12vw,4.7rem); } .hero-description br { display:none; } .final-cta h2 { font-size:clamp(3.25rem,14vw,4.7rem); } }
 
 @media(max-width:960px) { .desktop-nav,.header-cta { display:none; } .mobile-menu-button { display:grid; } }
+
+/* Teacher and community photographs keep their original framing. */
+.instructor { display:grid; grid-template-columns:1.1fr 1fr; align-items:center; gap:8%; }
+.instructor-copy h2 { margin-top:26px; margin-bottom:24px; }
+.instructor-copy>p:not(.eyebrow) { font-size:1rem; line-height:1.8; color:#606060; max-width:470px; }
+.instructor-copy>p.instructor-credentials { color:#191919; font-weight:550; padding-bottom:22px; margin-bottom:22px; border-bottom:1px solid #d4d4d4; }
+.instructor-embrace { margin-top:30px; }
+.instructor-portrait .image-frame img,.instructor-embrace .image-frame img,.competition-photo .image-frame img { height:auto; object-fit:contain; filter:grayscale(.55); }
+.instructor-portrait .image-frame:hover img,.instructor-embrace .image-frame:hover img,.competition-photo .image-frame:hover img { transform:none; filter:grayscale(0); }
+.community-gallery-expanded { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:48px; align-items:center; }
+.community-shared-moments { display:grid; gap:40px; min-width:0; }
+.community-shared-moments .community-moment { margin-top:0; }
+.competition-photo { min-width:0; }
+@media(max-width:1100px) { .instructor { gap:5%; } .community-gallery-expanded { gap:32px; } }
+@media(max-width:800px) {
+  .instructor { grid-template-columns:minmax(0,1fr); gap:44px; }
+  .instructor-copy { display:contents; }
+  .instructor-copy>.eyebrow { grid-row:1; }
+  .instructor-copy h2 { grid-row:2; margin:-18px 0 0; }
+  .instructor-portrait { grid-row:3; }
+  .instructor-copy>p:not(.eyebrow) { max-width:none; margin:0; }
+  .instructor-copy>p.instructor-credentials { margin:0; }
+  .instructor-embrace { margin-top:0; }
+  .community-gallery-expanded { grid-template-columns:minmax(0,1fr); gap:40px; }
+  .competition-photo { width:100%; max-width:560px; justify-self:center; }
+}

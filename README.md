@@ -34,6 +34,8 @@ A foto da seção Academia foi substituída por um quadro estático do arquivo `
 
 A foto adicional `2.jpg`, fornecida pelo usuário, aparece como `public/images/community-moment.jpg` na seção Comunidade, ao lado da foto de graduação. A galeria mantém os enquadramentos completos e se empilha em telas menores.
 
+As fotos `3.jpeg`, `4.jpeg` e `6.jpeg` foram fornecidas pelo usuário e copiadas sem recompressão para `community-embrace.jpeg` (1078 × 720), `juliano-pavao-adcc.jpeg` (1440 × 1439) e `jiu-jitsu-competition.jpeg` (900 × 1600). A apresentação do professor usa a foto do ADCC e o abraço; a imagem de luta com quimono integra a galeria da comunidade. Os três enquadramentos são preservados. O nome Juliano Pavão e as faixas pretas em jiu-jitsu, taekwondo e luta livre foram confirmados pelo usuário. Não foram atribuídos títulos ou resultados de competição.
+
 Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
 
 O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.
