@@ -1,0 +1,33 @@
+# FRONT39 — Brazilian Jiu-Jitsu
+
+Página institucional em português, desenvolvida em React com Vinext/Vite. Identidade visual monocromática baseada no SVG fornecido. Fotografias da própria academia, publicadas no perfil oficial.
+
+## Desenvolvimento
+
+`npm install` instala as dependências. `npm run dev` inicia a prévia local. `npm run build` produz a versão para publicação. `npm run lint` verifica o código.
+
+## Edição de conteúdo
+
+- `app/site-content.ts`: contatos, endereço, links e lista de programas. Cada programa tem título, descrição e mensagem específica para o WhatsApp.
+- `app/page.tsx`: seções e textos da página.
+- `app/globals.css`: identidade visual, estados de interação e versões responsivas.
+- `app/site-ui.tsx`: menu móvel acessível e animações com respeito à preferência de movimento reduzido.
+- `app/layout.tsx`, `app/robots.ts` e `app/sitemap.ts`: metadados e SEO. Atualize também a URL do JSON-LD em `app/page.tsx` se usar um domínio próprio.
+
+## Fontes e conteúdo
+
+O endereço e o WhatsApp seguem exatamente o briefing fornecido. O número informado (+55 51 9262-1334; wa.me/555192621334) tem oito dígitos locais. Confirme com a academia se o WhatsApp atualmente usa um nono dígito antes de divulgar publicamente. Não foi feita alteração automática.
+
+Programas foram baseados na biografia e nos destaques do Instagram oficial, que mencionam ensino progressivo, Jiu-Jitsu esportivo e defesa pessoal, Luta Livre Esportiva, Judô, Adulto e Infantil. Não foram inventados horários, preços, qualificações, depoimentos ou resultados. Os links de consulta levam ao WhatsApp sem enviar mensagens automaticamente.
+
+Fotografias oficiais (miniaturas públicas de 360 × 640, disponíveis em 13/09/2026):
+
+- Treino: https://www.instagram.com/front39bjj/reel/DX0Aq5YvY7F/
+- Academia: https://www.instagram.com/front39bjj/reel/DEf3YXmvJTe/
+- Infantil: https://www.instagram.com/front39bjj/reel/DWFMfWUhiiw/
+
+Os arquivos foram armazenados localmente para evitar expiração dos links do Instagram. Substitua por originais em alta resolução para melhorar a nitidez em telas grandes. Nenhuma imagem foi gerada por IA ou copiada das academias de referência.
+
+Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
+
+O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.
