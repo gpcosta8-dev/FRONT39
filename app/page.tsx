@@ -41,7 +41,7 @@ export default function Home() {
       </section>
       <section className="academy section" id="academia">
         <div className="academy-grid shell">
-          <figure className="academy-figure" data-reveal><div className="image-frame"><Image unoptimized src="/images/academy.jpg" alt="Espaço da FRONT39, com tatame e iluminação natural pelas janelas" width="360" height="640" loading="lazy" /></div><figcaption>O NOSSO ESPAÇO <span>FRONT39 / CACHOEIRINHA</span></figcaption></figure>
+          <figure className="academy-figure" data-reveal><div className="image-frame"><Image unoptimized src="/images/academy-live-photo.webp" alt="Interior da FRONT39, com tatame cinza, paredes brancas e pôr do sol pelas janelas" width="1308" height="1744" loading="lazy" /></div><figcaption>O NOSSO ESPAÇO <span>FRONT39 / CACHOEIRINHA</span></figcaption></figure>
           <div className="academy-copy" data-reveal><p className="eyebrow light">03 / A ACADEMIA</p><h2>Lá fora, o dia corre.<br />Aqui, você respira.</h2><p>Por um tempo, o que importa cabe no tatame: uma posição, um movimento, a atenção ao parceiro. A prática pede presença. O resto pode esperar um pouco.</p><p>Venha conhecer o espaço e conversar com a equipe. Às vezes, um lugar novo abre espaço para uma nova rotina.</p><a className="cta cta-outline" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Quero conhecer a academia <ArrowUpRight size={18} aria-hidden="true" /></a><div className="academy-signature"><Image unoptimized src="/images/front39-original.svg" alt="" width="70" height="70" loading="lazy" /><span>UM TEMPO PARA APRENDER.<br />UM LUGAR PARA VOLTAR.</span></div></div>
         </div>
       </section>
