@@ -30,6 +30,8 @@ Os arquivos foram armazenados localmente para evitar expiração dos links do In
 
 Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), em WebP de 1440 × 960 sem recompressão. Usada como fundo da abertura tanto no desktop quanto no celular, com recorte responsivo e camada escura para leitura. A seção Comunidade preserva o enquadramento completo. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento.
 
+O título da abertura usa um efeito de máquina de escrever executado uma vez, com o espaço final reservado para evitar deslocamentos. Para quem prefere movimento reduzido, o título completo aparece imediatamente.
+
 A foto da seção Academia foi substituída por um quadro estático do arquivo `1.mov` fornecido pelo usuário. Imagem `public/images/academy-live-photo.webp`, 1308 × 1744, extraída aproximadamente em 1,35 s de um Live Photo de 1,78 s, com orientação corrigida e conversão de cor P3 para sRGB. Somente a imagem estática é incluída no site; o MOV original permanece fora do projeto.
 
 A foto adicional `2.jpg`, fornecida pelo usuário, aparece como `public/images/community-moment.jpg` na seção Comunidade, ao lado da foto de graduação. A galeria mantém os enquadramentos completos e se empilha em telas menores.

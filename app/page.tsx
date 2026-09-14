@@ -3,6 +3,12 @@ import { ArrowDown, ArrowUpRight, Camera as Instagram, MapPin } from 'lucide-rea
 import { Header, ScrollReveals, WhatsAppIcon } from './site-ui';
 import { academy, programs } from './site-content';
 
+function TypewriterLine({ text, accent = false }: { text: string; accent?: boolean }) {
+  return <span className={`typewriter-line ${accent ? 'typewriter-line-accent' : 'typewriter-line-primary'}`}>
+    {Array.from(text).map((character, index) => <span className="typewriter-character" key={`${character}-${index}`}>{character === ' ' ? '\u00a0' : character}</span>)}
+  </span>;
+}
+
 export default function Home() {
   return <>
     <Header /><ScrollReveals />
@@ -13,7 +19,12 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-content shell">
           <p className="eyebrow light">CACHOEIRINHA, RS <span> / </span> BRAZILIAN JIU-JITSU</p>
-          <h1 id="hero-title">MUDE<br /><span>SUA VIDA.</span></h1>
+          <h1 id="hero-title" className="typewriter-title" aria-label="Mude sua vida.">
+            <span className="typewriter-copy" aria-hidden="true">
+              <TypewriterLine text="MUDE" />
+              <TypewriterLine text="SUA VIDA." accent />
+            </span>
+          </h1>
           <p className="hero-description">Os dias passam. A vontade de mudar fica.<br />{' '}Dê a ela um lugar para começar.</p>
           <a className="cta cta-white" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Agende sua aula experimental <ArrowUpRight size={19} aria-hidden="true" /></a>
         </div>
