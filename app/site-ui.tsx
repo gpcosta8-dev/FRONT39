@@ -13,7 +13,13 @@ export function Header() {
   return <>
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header id="inicio" className={`site-header ${scrolled ? 'scrolled' : ''}`}>
-      <a className="brand" href="#inicio" aria-label="FRONT39, início"><Image unoptimized src="/images/front39-wordmark.svg" alt="FRONT39" width="155" height="38" /><span>BRAZILIAN JIU-JITSU</span></a>
+      <a className="brand" href="#inicio" aria-label="FRONT39, início">
+        <Image className="brand-emblem" unoptimized src="/images/front39-original.svg" alt="" width={52} height={52} />
+        <span className="brand-text">
+          <Image className="brand-wordmark" unoptimized src="/images/front39-wordmark.svg" alt="FRONT39" width={157} height={35} />
+          <span className="brand-tagline">BRAZILIAN JIU-JITSU</span>
+        </span>
+      </a>
       <nav className="desktop-nav" aria-label="Navegação principal">{links.map(link => <a key={link.href} href={link.href}>{link.label}</a>)}</nav>
       <a className="header-cta" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Aula experimental <ArrowUpRight size={17} aria-hidden="true" /></a>
       <Sheet open={open} onOpenChange={setOpen}>
