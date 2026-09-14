@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://front39-bjj.giving-melon-9980.chatgpt.site'),
+  metadataBase: new URL('https://front39-bjj.nutrimesalva.chatgpt.site'),
   alternates: { canonical: '/' },
   title: 'FRONT39 | Brazilian Jiu-Jitsu em Cachoeirinha',
   description: 'Técnica, disciplina e evolução. Conheça a FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS, e agende sua aula experimental pelo WhatsApp.',

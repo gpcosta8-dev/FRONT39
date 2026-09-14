@@ -6,7 +6,7 @@ import { academy, programs } from './site-content';
 export default function Home() {
   return <>
     <Header /><ScrollReveals />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:'https://front39-bjj.giving-melon-9980.chatgpt.site', telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:'https://front39-bjj.nutrimesalva.chatgpt.site', telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
     <main id="conteudo">
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-media"><Image unoptimized src="/images/training.jpg" alt="Praticantes da FRONT39 durante treino de Jiu-Jitsu no tatame" width="360" height="640" fetchPriority="high" /></div>
