@@ -9,7 +9,7 @@ export const academy = {
 };
 // Programs are supported by the official Instagram bio/highlights. Ages, schedules and prices require confirmation.
 export const programs = [
-  { number: '01', title: 'Jiu-Jitsu adulto', tag: 'TÉCNICA E PRÁTICA', description: 'Ensino progressivo, Jiu-Jitsu esportivo e defesa pessoal. Construa sua base e amplie seu repertório no tatame.', message: 'Olá! Gostaria de conhecer as turmas de Jiu-Jitsu adulto da FRONT39.' },
-  { number: '02', title: 'Jiu-Jitsu infantil', tag: 'APRENDER E CRESCER', description: 'O primeiro contato com o Jiu-Jitsu passa pelo movimento e pelo respeito. Converse com a equipe sobre as turmas e faixas etárias.', message: 'Olá! Gostaria de saber sobre as turmas e faixas etárias do Jiu-Jitsu infantil da FRONT39.' },
-  { number: '03', title: 'Judô e Luta Livre', tag: 'OUTRAS FORMAS DE EVOLUIR', description: 'Explore outras modalidades presentes na FRONT39. Consulte a equipe para conhecer a proposta de cada treino e os horários disponíveis.', message: 'Olá! Gostaria de saber sobre os treinos de Judô e Luta Livre da FRONT39.' },
+  { number: '01', title: 'Jiu-Jitsu adulto', tag: 'UM TEMPO PARA VOCÊ', description: 'Começar de onde você está. Aprender os fundamentos, entender cada posição e construir sua prática com ensino progressivo, Jiu-Jitsu esportivo e defesa pessoal.', message: 'Olá! Gostaria de conhecer as turmas de Jiu-Jitsu adulto da FRONT39.' },
+  { number: '02', title: 'Jiu-Jitsu infantil', tag: 'HISTÓRIAS QUE COMEÇAM CEDO', description: 'O tempo de crescer também é tempo de descobrir. Um primeiro encontro com o movimento, o aprendizado e o respeito. Consulte as turmas e faixas etárias.', message: 'Olá! Gostaria de saber sobre as turmas e faixas etárias do Jiu-Jitsu infantil da FRONT39.' },
+  { number: '03', title: 'Judô e Luta Livre', tag: 'NOVOS CAMINHOS', description: 'Há mais de uma forma de se encontrar na prática. Conheça o Judô e a Luta Livre da FRONT39 e converse com a equipe sobre os treinos disponíveis.', message: 'Olá! Gostaria de saber sobre os treinos de Judô e Luta Livre da FRONT39.' },
 ];

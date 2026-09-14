@@ -28,6 +28,8 @@ Fotografias oficiais (miniaturas públicas de 360 × 640, disponíveis em 13/09/
 
 Os arquivos foram armazenados localmente para evitar expiração dos links do Instagram. Substitua por originais em alta resolução para melhorar a nitidez em telas grandes. Nenhuma imagem foi gerada por IA ou copiada das academias de referência.
 
+Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), em WebP de 1440 × 960 sem recompressão. Usada na abertura e em uma imagem completa na seção Comunidade; a versão móvel da abertura preserva o grupo inteiro. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento. A imagem da academia mantém a resolução disponível anteriormente.
+
 Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
 
 O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.

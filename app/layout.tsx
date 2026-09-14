@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://front39-bjj.nutrimesalva.chatgpt.site'),
   alternates: { canonical: '/' },
   title: 'FRONT39 | Brazilian Jiu-Jitsu em Cachoeirinha',
-  description: 'Técnica, disciplina e evolução. Conheça a FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS, e agende sua aula experimental pelo WhatsApp.',
-  openGraph: { title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Cada treino, um novo passo. Conheça a FRONT39 em Cachoeirinha e agende sua aula experimental.', type: 'website', locale: 'pt_BR', siteName: 'FRONT39' },
-  twitter: { card: 'summary', title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Técnica, disciplina e evolução em Cachoeirinha, RS.' },
+  description: 'Mude sua vida, um treino de cada vez. Conheça a FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS, e agende sua aula experimental.',
+  openGraph: { title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Os dias passam. A vontade de mudar fica. Encontre seu começo na FRONT39 Brazilian Jiu-Jitsu, em Cachoeirinha.', type: 'website', locale: 'pt_BR', siteName: 'FRONT39' },
+  twitter: { card: 'summary', title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Um tempo para você. Um lugar para começar. FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS.' },
   icons: { icon: '/images/front39-original.svg' },
 };
 

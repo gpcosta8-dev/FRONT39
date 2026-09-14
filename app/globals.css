@@ -170,3 +170,26 @@ address { font-style:normal; }
 @media(max-width:800px) { .hero { min-height:680px; padding-block:80px 125px; } }
 @media(max-width:480px) { .hero { min-height:665px; padding-block:68px 110px; } }
 @media(prefers-reduced-motion:reduce) { .reveal-pending { opacity:1; transform:none; } }
+/* The group photograph uses its full width; the community image preserves every person. */
+.hero-media { inset:0; }
+.hero-media img { object-position:center 50%; filter:grayscale(1) brightness(.85); }
+.hero-shade { background:linear-gradient(90deg,#131313ed 0%,#131313b8 30%,#13131338 67%,#13131310 100%),linear-gradient(0deg,#131313b3,transparent 35%); }
+.hero h1 { font-size:clamp(4.5rem,8vw,8.5rem); line-height:1.02; }
+.hero h1 span { color:#e0e0e0; }
+.hero-description { max-width:440px; color:#e1e1e1; }
+.team-photo { display:block; }
+.team-photo .image-frame { aspect-ratio:3/2; }
+.team-photo .image-frame img { object-fit:contain; filter:grayscale(.55); }
+.team-photo .image-frame:hover img { transform:none; filter:grayscale(0); }
+.final-cta-row>div { max-width:470px; }
+@media(max-width:800px) {
+  .hero { display:flex; flex-direction:column; align-items:stretch; min-height:0; padding:0; }
+  .hero-content { order:1; padding-block:70px 58px; }
+  .hero h1 { font-size:clamp(3.65rem,12vw,6.5rem); }
+  .hero-shade { display:none; }
+  .hero-media { position:relative; inset:auto; order:2; width:100%; aspect-ratio:3/2; }
+  .hero-media img { object-fit:contain; filter:grayscale(1) brightness(.93); }
+  .hero-foot { position:relative; inset:auto; order:3; padding-block:15px; }
+  .team-photo .image-action { width:40px; height:40px; right:12px; bottom:12px; }
+}
+@media(max-width:480px) { .hero-content { padding-block:54px 45px; } .hero h1 { font-size:clamp(3.1rem,12vw,4.7rem); } .hero-description br { display:none; } .final-cta h2 { font-size:clamp(3.25rem,14vw,4.7rem); } }
