@@ -32,6 +32,8 @@ Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida
 
 A foto da seção Academia foi substituída por um quadro estático do arquivo `1.mov` fornecido pelo usuário. Imagem `public/images/academy-live-photo.webp`, 1308 × 1744, extraída aproximadamente em 1,35 s de um Live Photo de 1,78 s, com orientação corrigida e conversão de cor P3 para sRGB. Somente a imagem estática é incluída no site; o MOV original permanece fora do projeto.
 
+A foto adicional `2.jpg`, fornecida pelo usuário, aparece como `public/images/community-moment.jpg` na seção Comunidade, ao lado da foto de graduação. A galeria mantém os enquadramentos completos e se empilha em telas menores.
+
 Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
 
 O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.

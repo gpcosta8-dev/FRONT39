@@ -181,6 +181,10 @@ address { font-style:normal; }
 .team-photo .image-frame { aspect-ratio:3/2; }
 .team-photo .image-frame img { object-fit:contain; filter:grayscale(.55); }
 .team-photo .image-frame:hover img { transform:none; filter:grayscale(0); }
+.community-gallery { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:36px; align-items:start; }
+.community-gallery .team-photo { min-width:0; }
+.community-moment { margin-top:64px; }
+@media(max-width:800px) { .community-gallery { grid-template-columns:minmax(0,1fr); gap:36px; } .community-moment { margin-top:0; } }
 .final-cta-row>div { max-width:470px; }
 @media(max-width:800px) {
   .hero { display:flex; flex-direction:column; align-items:stretch; min-height:0; padding:0; }

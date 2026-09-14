@@ -46,8 +46,11 @@ export default function Home() {
         </div>
       </section>
       <section className="community section shell" id="comunidade">
-        <div className="section-heading" data-reveal><div><p className="eyebrow">04 / COMUNIDADE FRONT39</p><h2>Com o tempo,<br /><span className="muted">os rostos viram histórias.</span></h2></div><div className="community-intro"><p>Um dia, foi a primeira aula de cada pessoa nesta foto. Depois vieram os treinos, as conversas e os caminhos compartilhados. Toda equipe começa com gente que decidiu chegar.</p><a className="text-link" href={academy.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={17} aria-hidden="true" /> @front39bjj <ArrowUpRight size={18} aria-hidden="true" /></a></div></div>
+        <div className="section-heading" data-reveal><div><p className="eyebrow">04 / COMUNIDADE FRONT39</p><h2>Com o tempo,<br /><span className="muted">os rostos viram histórias.</span></h2></div><div className="community-intro"><p>Um dia, foi a primeira aula de cada pessoa nestas fotos. Depois vieram os treinos, as conversas e os caminhos compartilhados. Toda equipe começa com gente que decidiu chegar.</p><a className="text-link" href={academy.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={17} aria-hidden="true" /> @front39bjj <ArrowUpRight size={18} aria-hidden="true" /></a></div></div>
+        <div className="community-gallery">
         <a className="team-photo" href="https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1" target="_blank" rel="noopener noreferrer" data-reveal><div className="image-frame"><Image unoptimized src="/images/team.webp" alt="Alunos e equipe da FRONT39 reunidos no tatame após uma graduação" width="1440" height="960" loading="lazy" /><span className="image-action" aria-hidden="true"><ArrowUpRight size={24} /></span></div><div className="photo-caption"><span>CADA PESSOA, UM CAMINHO.</span><span>JUNTOS, FRONT39.</span></div></a>
+        <figure className="team-photo community-moment" data-reveal><div className="image-frame"><Image unoptimized src="/images/community-moment.jpg" alt="Praticantes de quimono da FRONT39 conversam e sorriem juntos no tatame" width="6473" height="4315" loading="lazy" /></div><figcaption className="photo-caption"><span>O TREINO TAMBÉM É ENCONTRO.</span><span>FRONT39.</span></figcaption></figure>
+        </div>
       </section>
       <section className="location section" id="localizacao">
         <div className="shell location-grid">
