@@ -1,7 +1,10 @@
-import Image from 'next/image';
+import Image from './site-image';
+import { siteUrl } from '@/lib/site-url';
 import { ArrowDown, ArrowUpRight, Camera as Instagram, MapPin } from 'lucide-react';
 import { Header, ScrollReveals, WhatsAppIcon } from './site-ui';
 import { academy, programs } from './site-content';
+
+export const dynamic = 'force-static';
 
 function TypewriterLine({ text, accent = false }: { text: string; accent?: boolean }) {
   return <span className={`typewriter-line ${accent ? 'typewriter-line-accent' : 'typewriter-line-primary'}`}>
@@ -12,7 +15,7 @@ function TypewriterLine({ text, accent = false }: { text: string; accent?: boole
 export default function Home() {
   return <>
     <Header /><ScrollReveals />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:'https://front39-bjj.nutrimesalva.chatgpt.site', telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:siteUrl, telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
     <main id="conteudo">
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-media"><Image unoptimized src="/images/team.webp" alt="Equipe FRONT39 reunida no tatame em uma foto de graduação" width="1440" height="960" fetchPriority="high" /></div>

@@ -6,13 +6,23 @@ Página institucional em português, desenvolvida em React com Vinext/Vite. Iden
 
 `npm install` instala as dependências. `npm run dev` inicia a prévia local. `npm run build` produz a versão para publicação. `npm run lint` verifica o código.
 
+## GitHub Pages
+
+Endereço público: https://gpcosta8-dev.github.io/FRONT39/
+
+O fluxo `.github/workflows/pages.yml` publica automaticamente cada atualização enviada à branch `main`. Em Settings → Pages, a origem deve ser **GitHub Actions**. Também é possível publicar manualmente pela aba Actions.
+
+`npm run build:pages` gera o site estático em `out/`, com os caminhos das imagens, fontes e favicon preparados para `/FRONT39/`. O fluxo publica somente essa pasta. O menu e as animações continuam no navegador; não há servidor de aplicação no Pages.
+
+Para outro repositório ou domínio, configure `NEXT_PUBLIC_BASE_PATH` e `NEXT_PUBLIC_SITE_URL` no ambiente de compilação. A configuração existente de desenvolvimento local e de publicação via Sites é preservada.
+
 ## Edição de conteúdo
 
 - `app/site-content.ts`: contatos, endereço, links e lista de programas. Cada programa tem título, descrição e mensagem específica para o WhatsApp.
 - `app/page.tsx`: seções e textos da página.
 - `app/globals.css`: identidade visual, estados de interação e versões responsivas.
 - `app/site-ui.tsx`: menu móvel acessível e animações com respeito à preferência de movimento reduzido.
-- `app/layout.tsx`, `app/robots.ts` e `app/sitemap.ts`: metadados e SEO. Atualize também a URL do JSON-LD em `app/page.tsx` se usar um domínio próprio.
+- `app/layout.tsx`, `app/robots.ts` e `app/sitemap.ts`: metadados e SEO. `lib/site-url.ts` centraliza o endereço público e o prefixo dos arquivos. A exportação para Pages inclui os metadados estáticos em `scripts/prepare-pages.mjs`.
 
 ## Fontes e conteúdo
 

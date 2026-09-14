@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { sitePath, siteUrl } from '@/lib/site-url';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -13,18 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://front39-bjj.nutrimesalva.chatgpt.site'),
-  alternates: { canonical: '/' },
+  metadataBase: new URL(`${siteUrl}/`),
+  alternates: { canonical: `${siteUrl}/` },
   title: 'FRONT39 | Brazilian Jiu-Jitsu em Cachoeirinha',
   description: 'Mude sua vida, um treino de cada vez. Conheça a FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS, e agende sua aula experimental.',
   openGraph: { title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Os dias passam. A vontade de mudar fica. Encontre seu começo na FRONT39 Brazilian Jiu-Jitsu, em Cachoeirinha.', type: 'website', locale: 'pt_BR', siteName: 'FRONT39' },
   twitter: { card: 'summary', title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Um tempo para você. Um lugar para começar. FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS.' },
   icons: {
     icon: [
-      { url: '/favicon-round-32.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon-round-96.png', type: 'image/png', sizes: '96x96' },
+      { url: sitePath('/favicon-round-32.png'), type: 'image/png', sizes: '32x32' },
+      { url: sitePath('/favicon-round-96.png'), type: 'image/png', sizes: '96x96' },
     ],
-    shortcut: '/favicon.ico?v=round-1',
+    shortcut: sitePath('/favicon.ico?v=round-1'),
   },
 };
 

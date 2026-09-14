@@ -35,6 +35,17 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  if (process.env.DEPLOY_TARGET === 'github-pages') {
+    return {
+      css: { postcss: { plugins: [tailwindcss()] } },
+      define: {
+        'process.env.NEXT_PUBLIC_BASE_PATH': JSON.stringify(process.env.NEXT_PUBLIC_BASE_PATH || '/FRONT39'),
+        'process.env.NEXT_PUBLIC_SITE_URL': JSON.stringify(process.env.NEXT_PUBLIC_SITE_URL || 'https://gpcosta8-dev.github.io/FRONT39'),
+      },
+      plugins: [vinext()],
+    };
+  }
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= 'false';
