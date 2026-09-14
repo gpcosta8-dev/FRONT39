@@ -59,7 +59,7 @@ export default function Home() {
           <p className="eyebrow">03 / O PROFESSOR</p>
           <h2 id="instructor-title">Juliano<br /><span className="muted">Pavão.</span></h2>
           <p className="instructor-credentials">Professor da FRONT39.<br />Faixa preta em jiu-jitsu, taekwondo e luta livre.</p>
-          <p>Começar fica um pouco menos distante quando há alguém para orientar. No tatame, o aprendizado também passa pelo cuidado com quem está dando os primeiros passos.</p>
+          <p>Juliano Pavão iniciou a equipe FRONT39 em 2019. No tatame, o aprendizado também passa pelo cuidado com quem está dando os primeiros passos.</p>
           <figure className="instructor-embrace">
             <div className="image-frame"><Image unoptimized src="/images/community-embrace.jpeg" alt="Aluno de quimono recebe um abraço no tatame da FRONT39" width={1078} height={720} loading="lazy" /></div>
             <figcaption className="photo-caption"><span>HÁ CONQUISTAS QUE CABEM NUM ABRAÇO.</span></figcaption>
