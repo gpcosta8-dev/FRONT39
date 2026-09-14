@@ -40,6 +40,8 @@ As fotos `3.jpeg`, `4.jpeg` e `6.jpeg` foram fornecidas pelo usuário e copiadas
 
 O perfil informa que Juliano Pavão iniciou a equipe FRONT39 em 2019, conforme o ticket encaminhado pelo usuário.
 
+O favicon usa o símbolo original da equipe recortado em círculo, com cantos transparentes. As versões PNG de 32 e 96 px e o ICO de 16, 32 e 48 px ficam em `public/`, configurados em `app/layout.tsx`. O script `scripts/generate-favicon.mjs` gera esses arquivos a partir do SVG original.
+
 Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
 
 O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.

@@ -19,7 +19,13 @@ export const metadata: Metadata = {
   description: 'Mude sua vida, um treino de cada vez. Conheça a FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS, e agende sua aula experimental.',
   openGraph: { title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Os dias passam. A vontade de mudar fica. Encontre seu começo na FRONT39 Brazilian Jiu-Jitsu, em Cachoeirinha.', type: 'website', locale: 'pt_BR', siteName: 'FRONT39' },
   twitter: { card: 'summary', title: 'FRONT39 — Brazilian Jiu-Jitsu', description: 'Um tempo para você. Um lugar para começar. FRONT39 Brazilian Jiu-Jitsu em Cachoeirinha, RS.' },
-  icons: { icon: '/images/front39-original.svg' },
+  icons: {
+    icon: [
+      { url: '/favicon-round-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-round-96.png', type: 'image/png', sizes: '96x96' },
+    ],
+    shortcut: '/favicon.ico?v=round-1',
+  },
 };
 
 export default function RootLayout({
