@@ -31,3 +31,7 @@ Os arquivos foram armazenados localmente para evitar expiração dos links do In
 Referências de direção visual e navegação: AOJ (https://artofjiujitsu.com/pages/academy), Alliance Porto Alegre (https://allianceportoalegre.com.br/) e Guetho (https://guethojiujitsu.com.br/). Layout e textos próprios da FRONT39.
 
 O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o link externo permanecem acessíveis independentemente do carregamento do mapa. Não há formulários, pagamentos, contas ou coleta própria de dados.
+
+## Verificação da entrega
+
+Compilação de produção, TypeScript e `npx oxlint app` passaram. A página, robots.txt, sitemap.xml e todos os arquivos de imagem responderam HTTP 200 na execução de produção local; âncoras internas e metadados foram conferidos. O `npm run lint` global também analisa o catálogo de componentes fornecido pelo starter e aponta problemas preexistentes em componentes não usados pela página. Esse catálogo foi preservado. Não foi realizada inspeção visual automatizada no navegador.
