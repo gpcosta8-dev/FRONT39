@@ -29,6 +29,7 @@ writeFileSync(resolve(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF
 
 const html = readFileSync(resolve(output, 'index.html'), 'utf8');
 const assetUrls = [...html.matchAll(/(?:src|href)="(\/[^"?#]+)(?:[?#][^"]*)?"/g)].map(match => match[1]);
+assetUrls.push(...[...html.matchAll(/\bsrcset="([^"]+)"/gi)].flatMap(match => match[1].split(',').map(candidate => candidate.trim().split(/\s+/)[0])).filter(url => url.startsWith('/')));
 for (const url of new Set(assetUrls)) {
   if (!url.startsWith(`${basePath}/`)) throw new Error(`Asset is missing the Pages prefix: ${url}`);
   const target = resolve(output, decodeURIComponent(url.slice(basePath.length + 1)));

@@ -1,5 +1,5 @@
 import Image from './site-image';
-import { siteUrl } from '@/lib/site-url';
+import { sitePath, siteUrl } from '@/lib/site-url';
 import { ArrowDown, ArrowUpRight, Camera as Instagram, MapPin } from 'lucide-react';
 import { Header, ScrollReveals, WhatsAppIcon } from './site-ui';
 import { academy, programs } from './site-content';
@@ -18,7 +18,12 @@ export default function Home() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:siteUrl, telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
     <main id="conteudo">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-media"><Image unoptimized src="/images/banner-team.jpg" alt="Equipe FRONT39 reunida no tatame em uma foto de graduação" width="6622" height="4415" fetchPriority="high" /></div>
+        <div className="hero-media">
+          <picture>
+            <source media="(max-width: 800px)" srcSet={sitePath('/images/banner-team-1920.webp')} type="image/webp" />
+            <Image unoptimized src="/images/banner-team-2880.webp" alt="Equipe FRONT39 reunida no tatame em uma foto de graduação" width="2880" height="1920" loading="eager" fetchPriority="high" />
+          </picture>
+        </div>
         <div className="hero-shade" />
         <div className="hero-content shell">
           <p className="eyebrow light">CACHOEIRINHA, RS <span> / </span> BRAZILIAN JIU-JITSU</p>
