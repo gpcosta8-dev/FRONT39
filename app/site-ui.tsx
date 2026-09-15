@@ -16,7 +16,7 @@ export function Header() {
       <a className="brand" href="#inicio" aria-label="FRONT39, início">
         <Image className="brand-emblem" unoptimized src="/images/front39-original.svg" alt="" width={52} height={52} />
         <span className="brand-text">
-          <Image className="brand-wordmark" unoptimized src="/images/front39-wordmark.svg" alt="FRONT39" width={157} height={35} />
+          <Image className="brand-wordmark" unoptimized src="/images/front39-wordmark-header.svg" alt="FRONT39" width={157} height={35} />
           <span className="brand-tagline">BRAZILIAN JIU-JITSU</span>
         </span>
       </a>

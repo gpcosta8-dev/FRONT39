@@ -27,7 +27,7 @@ h2 { font-size:clamp(2.3rem,4.2vw,4.35rem); font-weight:500; line-height:1.09; l
 .brand { display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .brand-emblem { width:52px; height:52px; object-fit:contain; flex-shrink:0; mix-blend-mode:multiply; }
 .brand-text { display:block; width:157px; }
-.brand-wordmark { width:100%; height:35px; object-fit:contain; filter:invert(1) contrast(5); mix-blend-mode:multiply; }
+.brand-wordmark { width:100%; height:35px; object-fit:contain; }
 .brand-tagline { display:block; font-size:.75rem; letter-spacing:.04em; margin-top:5px; text-align:center; white-space:nowrap; }
 .desktop-nav { display:flex; gap:32px; font-size:.875rem; }
 .desktop-nav a { position:relative; padding-block:10px; }
