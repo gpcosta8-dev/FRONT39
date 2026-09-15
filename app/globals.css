@@ -22,7 +22,7 @@ img { display:block; max-width:100%; }
 .muted { color:#777; }
 h1,h2,h3,p { margin-top:0; }
 h2 { font-size:clamp(2.3rem,4.2vw,4.35rem); font-weight:500; line-height:1.09; letter-spacing:-.055em; margin-bottom:38px; }
-.site-header { height:98px; padding:12px 56px; display:flex; gap:28px; justify-content:space-between; align-items:center; background:#fafafa; position:sticky; top:0; z-index:40; border-bottom:1px solid #e1e1e1; transition:height .25s,box-shadow .25s; }
+.site-header { height:98px; padding:12px 56px; display:flex; gap:28px; justify-content:space-between; align-items:center; background:#fff; position:sticky; top:0; z-index:40; border-bottom:1px solid #e1e1e1; transition:height .25s,box-shadow .25s; }
 .site-header.scrolled { height:80px; box-shadow:0 2px 16px #00000006; }
 .brand { display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .brand-emblem { width:52px; height:52px; object-fit:contain; flex-shrink:0; mix-blend-mode:multiply; }
