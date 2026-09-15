@@ -6,28 +6,28 @@ import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, SheetC
 import { academy } from './site-content';
 
 const links = [{ href: '#front39', label: 'A Front39' }, { href: '#treinos', label: 'Treinos' }, { href: '#academia', label: 'A academia' }, { href: '#localizacao', label: 'Localização' }];
-export function Header() {
+export function Header({ homePath = '' }: { homePath?: string }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => { const update = () => setScrolled(window.scrollY > 20); update(); window.addEventListener('scroll', update, { passive: true }); return () => window.removeEventListener('scroll', update); }, []);
   return <>
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header id="inicio" className={`site-header ${scrolled ? 'scrolled' : ''}`}>
-      <a className="brand" href="#inicio" aria-label="FRONT39, início">
+      <a className="brand" href={`${homePath}#inicio`} aria-label="FRONT39, início">
         <Image className="brand-emblem" unoptimized src="/images/front39-original.svg" alt="" width={52} height={52} />
         <span className="brand-text">
           <Image className="brand-wordmark" unoptimized src="/images/front39-wordmark-ink.svg" alt="FRONT39" width={157} height={35} />
           <span className="brand-tagline">BRAZILIAN JIU-JITSU</span>
         </span>
       </a>
-      <nav className="desktop-nav" aria-label="Navegação principal">{links.map(link => <a key={link.href} href={link.href}>{link.label}</a>)}</nav>
+      <nav className="desktop-nav" aria-label="Navegação principal">{links.map(link => <a key={link.href} href={`${homePath}${link.href}`}>{link.label}</a>)}</nav>
       <a className="header-cta" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Aula experimental <ArrowUpRight size={17} aria-hidden="true" /></a>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="mobile-menu-button" aria-label="Abrir menu"><Menu size={24} aria-hidden="true" /></SheetTrigger>
         <SheetContent className="mobile-sheet" showCloseButton={false}>
           <SheetClose className="menu-close" aria-label="Fechar menu"><X aria-hidden="true" /></SheetClose>
           <SheetTitle className="menu-title">FRONT39</SheetTitle><SheetDescription className="sr-only">Navegue pelas seções e agende sua aula experimental.</SheetDescription>
-          <nav aria-label="Navegação móvel">{links.map((link,i) => <a key={link.href} href={link.href} onClick={() => setOpen(false)}><span>0{i+1}</span>{link.label}<ArrowUpRight size={22} aria-hidden="true" /></a>)}</nav>
+          <nav aria-label="Navegação móvel">{links.map((link,i) => <a key={link.href} href={`${homePath}${link.href}`} onClick={() => setOpen(false)}><span>0{i+1}</span>{link.label}<ArrowUpRight size={22} aria-hidden="true" /></a>)}</nav>
           <a className="cta cta-black" href={academy.whatsapp} target="_blank" rel="noopener noreferrer">Agende sua aula <ArrowUpRight size={18} aria-hidden="true" /></a><p className="menu-location">Cachoeirinha, RS<br />Brazilian Jiu-Jitsu</p>
         </SheetContent>
       </Sheet>

@@ -1,7 +1,9 @@
 import Image from './site-image';
 import { sitePath, siteUrl } from '@/lib/site-url';
-import { ArrowDown, ArrowUpRight, Camera as Instagram, MapPin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Camera as Instagram } from 'lucide-react';
 import { Header, ScrollReveals, WhatsAppIcon } from './site-ui';
+import { Footer } from './site-footer';
+import { Location } from './site-location';
 import { academy, programs } from './site-content';
 
 export const dynamic = 'force-static';
@@ -90,17 +92,12 @@ export default function Home() {
         <figure className="competition-photo" data-reveal><div className="image-frame"><Image unoptimized src="/images/jiu-jitsu-competition.jpeg" alt="Praticantes disputam uma luta de jiu-jitsu com quimono em uma competição" width={900} height={1600} loading="lazy" /></div><figcaption className="photo-caption"><span>CADA DESAFIO TAMBÉM ENSINA.</span><span>JIU-JITSU.</span></figcaption></figure>
         </div>
       </section>
-      <section className="location section" id="localizacao">
-        <div className="shell location-grid">
-          <div data-reveal><p className="eyebrow">06 / ENCONTRE A FRONT39</p><h2>Um novo caminho<br />pode começar aqui.</h2><address>R. Monteiro Lobato, 1079<br />2° Andar · Parque da Matriz<br />Cachoeirinha – RS<br /><span>94950-280 · Brasil</span></address><a className="text-link" href={academy.maps} target="_blank" rel="noopener noreferrer"><MapPin size={18} aria-hidden="true" /> Abrir no Google Maps <ArrowUpRight size={18} aria-hidden="true" /></a></div>
-          <div className="map-container" data-reveal><iframe title="Localização da FRONT39 em Cachoeirinha" src={'https://maps.google.com/maps?q=' + encodeURIComponent('Rua Monteiro Lobato 1079, Parque da Matriz, Cachoeirinha RS Brasil') + '&z=16&output=embed'} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen /><a className="map-caption" href={academy.maps} target="_blank" rel="noopener noreferrer"><span>FRONT39 <span> / CACHOEIRINHA, RS</span></span><ArrowUpRight size={21} aria-hidden="true" /></a></div>
-        </div>
-      </section>
+      <Location />
       <section className="final-cta section" aria-labelledby="final-title">
         <div className="shell" data-reveal><p className="eyebrow light">NÃO PRECISA MUDAR TUDO HOJE.</p><div className="final-cta-row"><h2 id="final-title">Comece<br />por você.</h2><div><p>O tempo vai passar de qualquer forma.<br />Que tal dar a este dia um novo começo?</p><a className="cta cta-white" href={academy.whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /> Agende sua primeira aula <ArrowUpRight size={20} aria-hidden="true" /></a></div></div></div>
       </section>
     </main>
-    <footer className="site-footer"><div className="shell"><div className="footer-grid"><a className="footer-brand" href="#inicio" aria-label="FRONT39, voltar ao início"><Image unoptimized src="/images/front39-wordmark.svg" alt="FRONT39" width="210" height="50" loading="lazy" /><span>BRAZILIAN JIU-JITSU</span></a><div><p className="eyebrow">VISITE</p><address>R. Monteiro Lobato, 1079, 2° Andar<br />Parque da Matriz · Cachoeirinha – RS<br />94950-280 · Brasil</address></div><div><p className="eyebrow">FALE COM A GENTE</p><a href={academy.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp · {academy.phone}</a><a href={academy.instagram} target="_blank" rel="noopener noreferrer">Instagram · @front39bjj</a></div><nav aria-label="Navegação do rodapé"><a href="#front39">A Front39</a><a href="#treinos">Treinos</a><a href="#professor">O professor</a><a href="#academia">A academia</a><a href="#comunidade">Comunidade</a><a href="#localizacao">Localização</a></nav></div><div className="footer-bottom"><span>© {new Date().getFullYear()} FRONT39. Todos os direitos reservados.</span><span>CACHOEIRINHA, RS · BRASIL</span></div></div></footer>
+    <Footer />
     <a className="floating-whatsapp" href={academy.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Converse com a FRONT39 pelo WhatsApp"><WhatsAppIcon /><span>Seu primeiro passo</span></a>
   </>;
 }

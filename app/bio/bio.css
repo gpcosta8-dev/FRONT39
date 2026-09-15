@@ -1,0 +1,30 @@
+/* Compact composition; typography, colors and controls come from the landing. */
+.bio-hero { min-height:0; padding-block:80px; }
+.bio-opening { position:relative; z-index:1; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); align-items:center; gap:8%; }
+.bio-hero h1 { font-size:clamp(3.1rem,6.1vw,6.8rem); margin-block:26px; }
+.bio-hero .hero-description { margin-bottom:0; }
+.bio-actions { min-width:0; }
+.bio-training-links { display:grid; gap:12px; margin-top:20px; }
+.bio-training-link { width:100%; min-height:96px; }
+.bio-action-title { display:block; font-size:1.65rem; letter-spacing:-.04em; line-height:1.2; }
+.bio-action-description { display:block; font-size:.875rem; font-weight:400; margin-top:8px; }
+.bio-unavailable { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:19px 24px; background:#181818; color:#bcbcbc; border:1px solid #777; font-size:.875rem; text-align:left; cursor:not-allowed; }
+.bio-soon { display:inline-flex; align-items:center; gap:6px; padding:5px 8px; border:1px solid #777; white-space:nowrap; }
+.bio-whatsapp { width:100%; margin-top:24px; }
+.bio-whatsapp span { flex:1; }
+.bio-other-links { display:flex; flex-wrap:wrap; justify-content:space-between; gap:18px; margin-top:24px; }
+.bio-other-links .text-link { gap:12px; }
+.bio-page .cta:active { background:#d7d7d7; color:#141414; }
+.bio-page .cta:focus-visible,.bio-page .text-link:focus-visible { outline-offset:4px; }
+@media(max-width:800px) {
+  .bio-hero { min-height:0; padding-block:44px 48px; }
+  .bio-opening { grid-template-columns:minmax(0,1fr); gap:32px; }
+  .bio-hero h1 { font-size:clamp(2.7rem,9vw,4.5rem); margin-block:18px; }
+  .bio-actions { width:100%; }
+  .bio-training-link { min-height:82px; }
+  .bio-hero .hero-shade { background:linear-gradient(90deg,#131313ed,#131313b8),linear-gradient(0deg,#131313,transparent 75%); }
+}
+@media(max-width:480px) {
+  .bio-unavailable { padding-inline:20px; }
+  .bio-hero .eyebrow { line-height:1.8; }
+}

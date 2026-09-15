@@ -59,3 +59,11 @@ O mapa é incorporado pelo Google Maps e depende desse serviço. O endereço e o
 ## Verificação da entrega
 
 Compilação de produção, TypeScript e `npx oxlint app` passaram. A página, robots.txt, sitemap.xml e todos os arquivos de imagem responderam HTTP 200 na execução de produção local; âncoras internas e metadados foram conferidos. O `npm run lint` global também analisa o catálogo de componentes fornecido pelo starter e aponta problemas preexistentes em componentes não usados pela página. Esse catálogo foi preservado. Não foi realizada inspeção visual automatizada no navegador.
+
+## Página /bio
+
+A rota `/bio/` usa a mesma tipografia, botões, cabeçalho, rodapé, fotos e mapa da landing. Jiu-Jitsu e Judô abrem conversas com a equipe pelo WhatsApp; treinamento funcional fica desabilitado com o selo “Em breve”. O banner mantém as versões WebP responsivas. Os links de navegação retornam às seções da página principal, respeitando o prefixo do GitHub Pages.
+
+O quiz e o painel privado ainda dependem da definição de perguntas, conclusão e dados a consultar. Nenhum formulário de coleta, cadastro ou painel simulado foi adicionado.
+
+O exportador Vinext beta redireciona rotas internas antes de gerar o HTML quando `trailingSlash` está habilitado. Por isso, a compilação usa `trailingSlash: false` e a preparação estática copia o HTML de cada rota para seu `index.html`, preservando a URL pública `/bio/`. A validação confere as duas páginas, seus arquivos locais e o sitemap.
