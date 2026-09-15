@@ -62,8 +62,8 @@ Compilação de produção, TypeScript e `npx oxlint app` passaram. A página, r
 
 ## Página /bio
 
-A rota `/bio/` usa a mesma tipografia, botões, cabeçalho, rodapé, fotos e mapa da landing. Jiu-Jitsu e Judô abrem conversas com a equipe pelo WhatsApp; treinamento funcional fica desabilitado com o selo “Em breve”. O banner mantém as versões WebP responsivas. Os links de navegação retornam às seções da página principal, respeitando o prefixo do GitHub Pages.
+A rota `/bio/` usa a mesma tipografia, botões, cabeçalho, rodapé, fotos e mapa da landing. A escolha de Jiu-Jitsu ou Judô substitui as modalidades pelas opções Kids e Adultos. Cada opção abre o WhatsApp com uma mensagem específica para a modalidade e o público escolhidos; o botão de voltar permite trocar a modalidade e restaura o foco. Treinamento funcional fica desabilitado com o selo “Em breve”. O banner mantém as versões WebP responsivas. Os links de navegação retornam às seções da página principal, respeitando o prefixo do GitHub Pages.
 
-O quiz e o painel privado ainda dependem da definição de perguntas, conclusão e dados a consultar. Nenhum formulário de coleta, cadastro ou painel simulado foi adicionado.
+O fluxo de duas escolhas funciona no navegador, sem armazenar respostas. A mensagem é preparada no WhatsApp e seu envio fica a cargo do visitante. Um quiz adicional e o painel privado ainda dependem de especificação; nenhum cadastro ou painel simulado foi adicionado.
 
 O exportador Vinext beta redireciona rotas internas antes de gerar o HTML quando `trailingSlash` está habilitado. Por isso, a compilação usa `trailingSlash: false` e a preparação estática copia o HTML de cada rota para seu `index.html`, preservando a URL pública `/bio/`. A validação confere as duas páginas, seus arquivos locais e o sitemap.

@@ -5,7 +5,10 @@
 .bio-hero .hero-description { margin-bottom:0; }
 .bio-actions { min-width:0; }
 .bio-training-links { display:grid; gap:12px; margin-top:20px; }
-.bio-training-link { width:100%; min-height:96px; }
+.bio-training-link { width:100%; min-height:96px; text-align:left; border:0; }
+.bio-step-title { font-size:.875rem; font-weight:550; line-height:1.7; letter-spacing:.12em; text-transform:uppercase; margin:0; }
+.bio-back { background:none; color:inherit; border:0; border-bottom:1px solid currentColor; padding:8px 0; margin-top:20px; min-height:44px; gap:12px; }
+.bio-back:hover svg { transform:translateX(-2px); }
 .bio-action-title { display:block; font-size:1.65rem; letter-spacing:-.04em; line-height:1.2; }
 .bio-action-description { display:block; font-size:.875rem; font-weight:400; margin-top:8px; }
 .bio-unavailable { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:19px 24px; background:#181818; color:#bcbcbc; border:1px solid #777; font-size:.875rem; text-align:left; cursor:not-allowed; }

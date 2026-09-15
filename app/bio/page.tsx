@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import { ArrowUpRight, Clock3, Camera as Instagram } from 'lucide-react';
+import { ArrowUpRight, Camera as Instagram } from 'lucide-react';
 import Image from '../site-image';
 import { Header, WhatsAppIcon } from '../site-ui';
 import { Footer } from '../site-footer';
 import { Location } from '../site-location';
+import { TrainingChooser } from './training-chooser';
 import { academy } from '../site-content';
 import { sitePath, siteUrl } from '@/lib/site-url';
 import './bio.css';
@@ -17,11 +18,11 @@ export const metadata: Metadata = {
   twitter: { card: 'summary', title: 'Seu primeiro passo | FRONT39', description: 'Conheça os treinos da FRONT39 em Cachoeirinha.' },
 };
 
-const contact = (modality: string) => {
+const generalContact = (() => {
   const url = new URL(academy.whatsapp);
-  url.searchParams.set('text', `Olá! Vim pela página bio da FRONT39 e gostaria de saber sobre as aulas de ${modality}.`);
+  url.searchParams.set('text', 'Olá! Vim pela página bio da FRONT39 e gostaria de conversar com a equipe sobre os treinos.');
   return url.href;
-};
+})();
 
 export default function Bio() {
   return <>
@@ -42,13 +43,8 @@ export default function Bio() {
             <p className="hero-description">A vontade de mudar já está aí.<br />Dê a ela um lugar para começar.</p>
           </div>
           <div className="bio-actions">
-            <p className="eyebrow light" id="bio-training-title">ENCONTRE SEU TREINO</p>
-            <nav className="bio-training-links" aria-labelledby="bio-training-title">
-              <a className="cta cta-white bio-training-link" href={contact('Jiu-Jitsu')} target="_blank" rel="noopener noreferrer"><span><span className="bio-action-title">Jiu-Jitsu</span><span className="bio-action-description">Conheça as turmas</span></span><ArrowUpRight size={24} aria-hidden="true" /></a>
-              <a className="cta cta-white bio-training-link" href={contact('Judô')} target="_blank" rel="noopener noreferrer"><span><span className="bio-action-title">Judô</span><span className="bio-action-description">Converse com a equipe</span></span><ArrowUpRight size={24} aria-hidden="true" /></a>
-              <button className="bio-unavailable" disabled><span>Treinamento funcional</span><span className="bio-soon"><Clock3 size={14} aria-hidden="true" /> Em breve</span></button>
-            </nav>
-            <a className="cta cta-outline bio-whatsapp" href={academy.whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span>Fale com a FRONT39</span><ArrowUpRight size={18} aria-hidden="true" /></a>
+            <TrainingChooser />
+            <a className="cta cta-outline bio-whatsapp" href={generalContact} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span>Fale com a FRONT39</span><ArrowUpRight size={18} aria-hidden="true" /></a>
             <div className="bio-other-links"><a className="text-link" href={sitePath('/')} >Conheça a equipe <ArrowUpRight size={16} aria-hidden="true" /></a><a className="text-link" href={academy.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={16} aria-hidden="true" /> Instagram</a></div>
           </div>
         </div>
