@@ -233,8 +233,9 @@ address { font-style:normal; }
 .typewriter-title .typewriter-line { position:relative; width:max-content; }
 .typewriter-title .typewriter-line-primary,.typewriter-title .typewriter-line-primary span { color:#fff; }
 .typewriter-title .typewriter-line-accent,.typewriter-title .typewriter-line-accent span { color:#e0e0e0; }
-.typewriter-title .typewriter-character { --typewriter-delay:.25s; display:inline-block; position:relative; visibility:hidden; animation:typewriter-character 0s linear var(--typewriter-delay) forwards; }
-.typewriter-title .typewriter-character::after { content:''; position:absolute; top:.08em; bottom:.08em; right:-.02em; width:.035em; background:currentColor; opacity:0; animation:typewriter-caret-step .11s step-end var(--typewriter-delay) forwards; }
+.typewriter-title .typewriter-character { --typewriter-delay:.25s; display:inline-block; position:relative; visibility:hidden; animation:typewriter-character .01s step-end var(--typewriter-delay) forwards; }
+/* One terminal caret, with no filled animation state left behind on mobile. */
+.typewriter-line-accent .typewriter-character:last-child::after { content:''; position:absolute; top:.08em; bottom:.08em; right:-.08em; width:.035em; background:currentColor; opacity:0; animation:typewriter-caret-blink .9s linear 1.64s; }
 .typewriter-line-primary .typewriter-character:nth-child(2) { --typewriter-delay:.36s; }
 .typewriter-line-primary .typewriter-character:nth-child(3) { --typewriter-delay:.47s; }
 .typewriter-line-primary .typewriter-character:nth-child(4) { --typewriter-delay:.58s; }
@@ -247,9 +248,6 @@ address { font-style:normal; }
 .typewriter-line-accent .typewriter-character:nth-child(7) { --typewriter-delay:1.41s; }
 .typewriter-line-accent .typewriter-character:nth-child(8) { --typewriter-delay:1.52s; }
 .typewriter-line-accent .typewriter-character:nth-child(9) { --typewriter-delay:1.63s; }
-.typewriter-line-accent .typewriter-character:last-child::after { animation:typewriter-caret-blink .45s step-end 1.63s 2,typewriter-caret-hide 0s linear 2.53s forwards; }
 @keyframes typewriter-character { to { visibility:visible; } }
-@keyframes typewriter-caret-step { from { opacity:1; } to { opacity:0; } }
-@keyframes typewriter-caret-blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
-@keyframes typewriter-caret-hide { to { opacity:0; } }
-@media(prefers-reduced-motion:reduce) { .typewriter-title .typewriter-character { visibility:visible; } .typewriter-title .typewriter-character::after { display:none; } }
+@keyframes typewriter-caret-blink { 0%,24.99%,50%,74.99% { opacity:1; } 25%,49.99%,75%,100% { opacity:0; } }
+@media(prefers-reduced-motion:reduce) { .typewriter-title .typewriter-character { visibility:visible; } .typewriter-line-accent .typewriter-character:last-child::after { display:none; } }
