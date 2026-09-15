@@ -18,7 +18,7 @@ export default function Home() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context':'https://schema.org', '@type':'SportsActivityLocation', name:academy.name, description:'Academia de Brazilian Jiu-Jitsu em Cachoeirinha, RS.', url:siteUrl, telephone:academy.phone, address:{ '@type':'PostalAddress', streetAddress:'R. Monteiro Lobato, 1079, 2° Andar – Parque da Matriz', addressLocality:'Cachoeirinha', addressRegion:'RS', postalCode:'94950-280', addressCountry:'BR' }, sameAs:[academy.instagram], hasMap:academy.maps }).replace(/</g,'\\u003c') }} />
     <main id="conteudo">
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-media"><Image unoptimized src="/images/team.webp" alt="Equipe FRONT39 reunida no tatame em uma foto de graduação" width="1440" height="960" fetchPriority="high" /></div>
+        <div className="hero-media"><Image unoptimized src="/images/banner-team.jpg" alt="Equipe FRONT39 reunida no tatame em uma foto de graduação" width="6622" height="4415" fetchPriority="high" /></div>
         <div className="hero-shade" />
         <div className="hero-content shell">
           <p className="eyebrow light">CACHOEIRINHA, RS <span> / </span> BRAZILIAN JIU-JITSU</p>

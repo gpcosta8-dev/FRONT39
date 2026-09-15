@@ -38,7 +38,7 @@ Fotografias oficiais (miniaturas públicas de 360 × 640, disponíveis em 13/09/
 
 Os arquivos foram armazenados localmente para evitar expiração dos links do Instagram. Substitua por originais em alta resolução para melhorar a nitidez em telas grandes. Nenhuma imagem foi gerada por IA ou copiada das academias de referência.
 
-Atualização de imagem e textos: foto de equipe escolhida pelo usuário, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), em WebP de 1440 × 960 sem recompressão. Usada como fundo da abertura tanto no desktop quanto no celular, com recorte responsivo e camada escura para leitura. A seção Comunidade preserva o enquadramento completo. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento.
+O banner usa `public/images/banner-team.jpg`, foto original de 6622 × 4415 fornecida pelo usuário como `banner_team.jpg`, preservada sem recompressão. A imagem aparece como fundo da abertura no desktop e no celular, com recorte responsivo e camada escura para leitura. A seção Comunidade usa a foto de graduação em WebP de 1440 × 960, obtida em sua publicação original (https://www.instagram.com/p/DSj2kmtjKQh/?img_index=1), com enquadramento completo. Textos revisados para uma voz mais introspectiva, centrada em recomeço e pertencimento.
 
 O título da abertura usa um efeito de máquina de escrever executado uma vez, com o espaço final reservado para evitar deslocamentos. Para quem prefere movimento reduzido, o título completo aparece imediatamente.
 
